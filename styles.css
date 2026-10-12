@@ -1,0 +1,93 @@
+:root {
+  --navy: #283d50;
+  --link: #1d5b87;
+  --text: #333;
+  --border: #dce1e6;
+}
+* { box-sizing: border-box; }
+html { scroll-padding-top: 88px; }
+body { margin: 0; color: var(--text); background: #fff; font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 1.7; }
+a { color: var(--link); text-underline-offset: 3px; }
+a:hover { text-decoration: underline; }
+a:focus-visible { outline: 3px solid #d59d50; outline-offset: 4px; }
+h1, h2, h3 { color: var(--navy); line-height: 1.3; }
+p { margin: 0 0 18px; }
+.container { width: min(1080px, calc(100% - 64px)); margin-inline: auto; }
+.skip-link { position: fixed; top: -100px; left: 16px; z-index: 20; padding: 8px 16px; background: #fff; color: var(--navy); }
+.skip-link:focus { top: 10px; }
+.site-header { position: sticky; top: 0; z-index: 10; background: var(--navy); }
+.navigation { display: flex; align-items: center; justify-content: space-between; min-height: 68px; gap: 24px; }
+.navigation a { color: #fff; text-decoration: none; }
+.navigation a:hover { text-decoration: underline; }
+.site-name { font-size: 19px; font-weight: 700; white-space: nowrap; }
+.nav-links { display: flex; flex-wrap: wrap; gap: 24px; }
+.nav-links a { font-size: 14px; }
+.intro { position: relative; isolation: isolate; overflow: hidden; padding: 48px 0 34px; background: var(--navy); color: #fff; border-bottom: 1px solid var(--border); text-align: center; }
+.intro::before { content: ""; position: absolute; z-index: -2; inset: -12px; background: url("assets/macau-skyline.jpg") center 55% / cover no-repeat; filter: blur(4px) saturate(.85); }
+.intro::after { content: ""; position: absolute; z-index: -1; inset: 0; background: linear-gradient(rgba(24, 40, 55, .73), rgba(24, 40, 55, .65)); }
+.intro h1, .intro .workshop-edition { color: #fff; }
+.intro .event-location a { color: inherit; }
+.workshop-edition { font-size: 23px; margin-bottom: 10px; color: var(--navy); }
+h1 { margin: 0 0 18px; font-size: clamp(28px, 3.1vw, 40px); font-weight: 700; }
+.short-name { font-size: .72em; }
+.workshop-subtitle { font-size: 20px; margin-bottom: 25px; }
+.event-location { font-size: 18px; margin-bottom: 10px; }
+.conference-link { display: inline-block; padding: 8px 16px; margin-top: 8px; background: rgba(255, 255, 255, .96); border-radius: 2px; }
+.conference-link img { display: block; width: 220px; max-width: 100%; height: auto; }
+.page-content { padding-top: 18px; }
+.content-section { padding: 38px 0 30px; }
+h2 { margin: 0 0 25px; padding-bottom: 12px; border-bottom: 1px solid var(--border); font-size: 28px; font-weight: 600; }
+.content-section > p:last-child { margin-bottom: 0; }
+.dates-table { width: 100%; max-width: 800px; border-collapse: collapse; }
+.dates-table th, .dates-table td { padding: 12px 0; border-bottom: 1px solid var(--border); text-align: left; vertical-align: top; }
+.dates-table th { width: 62%; padding-right: 24px; font-weight: 600; }
+.topics-list { padding-left: 24px; margin: 0 0 22px; }
+.topics-list li { margin: 16px 0; padding-left: 4px; }
+.organizers-list { display: flex; flex-wrap: wrap; justify-content: center; gap: 36px 28px; list-style: none; padding: 8px 0 0; margin: 0; }
+.organizer { flex: 0 0 calc((100% - 84px) / 4); text-align: center; }
+.photo-placeholder { width: 140px; height: 140px; margin: 0 auto 16px; background: #f3f4f5; }
+.organizer h3 { font-size: 17px; font-weight: 600; margin: 0 0 8px; }
+.organizer h3 a { text-decoration: none; }
+.organizer h3 a:hover { text-decoration: underline; }
+.organizer p { font-size: 14px; line-height: 1.5; margin: 0; }
+.site-footer { background: #f4f6f8; border-top: 1px solid var(--border); padding: 25px 0; margin-top: 25px; text-align: center; color: #555; font-size: 13px; }
+.site-footer p { margin: 0; }
+.site-footer .photo-credit { margin-top: 10px; font-size: 11px; }
+@media (max-width: 950px) {
+  .navigation { flex-direction: column; align-items: flex-start; padding-block: 14px; gap: 8px; }
+  .nav-links { gap: 8px 22px; }
+  html { scroll-padding-top: 120px; }
+  .organizer { flex-basis: calc((100% - 56px) / 3); }
+}
+@media (max-width: 600px) {
+  .container { width: calc(100% - 36px); }
+  .site-header { position: static; }
+  html { scroll-padding-top: 20px; }
+  .navigation { gap: 10px; }
+  .nav-links { gap: 6px 18px; }
+  .nav-links a { font-size: 13px; }
+  .intro { padding-block: 35px 25px; }
+  .intro::before { background-position: 62% 55%; }
+  .workshop-edition { font-size: 19px; }
+  h1 { font-size: 29px; }
+  .workshop-subtitle { font-size: 17px; }
+  .event-location { font-size: 16px; }
+  .dates-table { font-size: 14px; }
+  .dates-table th { width: 56%; padding-right: 14px; }
+  .conference-link img { width: 190px; }
+  .content-section { padding-block: 28px 20px; }
+  h2 { font-size: 25px; margin-bottom: 22px; }
+  .organizers-list { gap: 30px 18px; }
+  .organizer { flex-basis: calc((100% - 18px) / 2); }
+  .photo-placeholder { width: 120px; height: 120px; }
+  .organizer h3 { font-size: 16px; }
+  .organizer p { font-size: 13px; }
+}
+@media print {
+  .site-header { position: static; }
+  .nav-links, .skip-link { display: none; }
+  .container { width: 100%; }
+  .intro { padding-block: 20px; }
+  .content-section { padding-block: 20px; }
+  .organizer { break-inside: avoid; }
+}
