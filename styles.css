@@ -45,8 +45,11 @@ h2 { margin: 0 0 25px; padding-bottom: 12px; border-bottom: 1px solid var(--bord
 .topics-list li { margin: 16px 0; padding-left: 4px; }
 .organizers-list { display: flex; flex-wrap: wrap; justify-content: center; gap: 36px 28px; list-style: none; padding: 8px 0 0; margin: 0; }
 .organizer { flex: 0 0 calc((100% - 84px) / 4); text-align: center; }
-.organizer-photo, .photo-placeholder { display: block; width: 140px; height: 140px; margin: 0 auto 16px; border-radius: 3px; background: #f7f0eb; }
+.organizer-photo, .organizer-photo-frame, .photo-placeholder { display: block; width: 140px; height: 140px; margin: 0 auto 16px; border-radius: 3px; background: #f7f0eb; }
 .organizer-photo { object-fit: cover; object-position: center 35%; }
+.organizer-photo-frame { position: relative; overflow: hidden; }
+/* Show a 400px square from (940, 460) in Yunhao's 1706 x 1279 source photo. */
+.organizer-photo-frame .organizer-photo { position: absolute; width: 426.5%; height: auto; max-width: none; margin: 0; left: -235%; top: -115%; border-radius: 0; }
 .organizer h3 { font-size: 17px; font-weight: 600; margin: 0 0 8px; }
 .organizer h3 a { text-decoration: none; }
 .organizer h3 a:hover { text-decoration: underline; }
@@ -83,7 +86,7 @@ h2 { margin: 0 0 25px; padding-bottom: 12px; border-bottom: 1px solid var(--bord
   h2 { font-size: 25px; margin-bottom: 22px; }
   .organizers-list { gap: 30px 18px; }
   .organizer { flex-basis: calc((100% - 18px) / 2); }
-  .organizer-photo, .photo-placeholder { width: 120px; height: 120px; }
+  .organizer-photo, .organizer-photo-frame, .photo-placeholder { width: 120px; height: 120px; }
   .organizer h3 { font-size: 16px; }
   .organizer p { font-size: 13px; }
 }

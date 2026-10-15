@@ -12,7 +12,7 @@ The supplied `coling2027-logo.png` is the conference logo provided by the worksh
 
 # Organizer portraits
 
-The portraits below are unchanged downloads from the organizers' personal, institutional, or Google Scholar profile pages. They are displayed in square frames using CSS. Original rights remain with their respective owners; the header photograph's CC BY-SA license does not apply to these portraits.
+The portraits below are downloaded from the organizers' personal, institutional, or Google Scholar profile pages, or supplied by the workshop organizer as noted. Image files are unchanged and displayed in square frames using CSS. Original rights remain with their respective owners; the header photograph's CC BY-SA license does not apply to these portraits.
 
 - **Hai Hu** — `hai-hu.jpg`. [Profile](https://huhailinguist.github.io/); [original image](<https://huhailinguist.github.io/photos/photo1.jpg>).
 - **Linyang He** — `linyang-he.jpg`. [Profile](https://linyanghe.github.io/); [original image](<https://linyanghe.github.io/images/me.jpg>).
@@ -25,7 +25,7 @@ The portraits below are unchanged downloads from the organizers' personal, insti
 - **Shaonan Wang** — `shaonan-wang.png`. [Profile](https://wangshaonan.github.io/); [original image](<https://wangshaonan.github.io/images/profile.png>).
 - **Adel Chaouch-Orozco** — `adel-chaouch-orozco.jpg`. [Profile](https://lt.cityu.edu.hk/en/people/academic-staff/chaouch-orozco-adel); [original image](<https://lt.cityu.edu.hk/-/media/project/cityuhk/academic/lt/people/image/achaouch-profile_0.jpg?rev=367bbf1419134bd693386797ab54d388&hash=FF3337DAD80CAC309629971591A64027>).
 - **Philipp Wicke** — `philipp-wicke.jpg`. [Profile](https://www.cas.lmu.de/de/personen-am-cas/details/philipp-wicke-118c25c1.html); [original image](<https://cms-cdn.lmu.de/media/42-cas/personen/wicke-philipp_1_1_format_m-2.jpg>).
-- **Catherine Arnett** — `catherine-arnett.jpg`. [Profile](https://langcoglab.ucsd.edu/people/); [original image](<https://langcoglab.ucsd.edu/wp-content/uploads/sites/72/2024/01/headshot-1024x868.jpg>).
+- **Catherine Arnett** — `catherine-arnett.png`. Supplied by the workshop organizer in `ref/catherine.png`.
 - **Sercan Karakaş** — `sercan-karakas.jpeg`. [Profile](https://linguistics.uchicago.edu/directory/sercan-karakas); [original image](<https://linguistics.uchicago.edu/sites/default/files/2026-08/sercan%20karakas%202_0.jpeg>).
 
-- **Yunhao Zhang** — `yunhao-zhang.jpg`. [Google Scholar profile](https://scholar.google.com/citations?user=IainqjgAAAAJ); [original image](<https://scholar.googleusercontent.com/citations?view_op=view_photo&user=IainqjgAAAAJ&citpid=5>). Profile identity verified against the Institute of Automation, Chinese Academy of Sciences affiliation, verified `ia.ac.cn` email domain, and matching publications with Shaonan Wang and Chengqing Zong.
+- **Yunhao Zhang** — `yunhao-zhang.jpg`. Supplied by the workshop organizer in `ref/yunhao.jpeg`. CSS displays a square crop around his head and shoulders; the source file is unchanged. [Google Scholar profile](https://scholar.google.com/citations?user=IainqjgAAAAJ).
